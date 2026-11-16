@@ -66,9 +66,9 @@ en POST med tom titel (400), en GET, en DELETE och en reset.
 
 **Lärmål:** hur Playwright "ser" sidan, locators, varför `getByRole` är att föredra.
 
-- [ ] Starta appen och kör `npx playwright codegen localhost:3000`
-- [ ] Spela in: lägga till en film
-- [ ] Diskutera den genererade koden: vilka locators valdes och varför? Vad saknas (assertions!)?
+- [x] Starta appen och kör `npx playwright codegen localhost:3000`
+- [x] Spela in: lägga till en film
+- [x] Diskutera den genererade koden: vilka locators valdes och varför? Vad saknas (assertions!)?
 
 **Klart när:** utvecklaren kan förklara skillnaden mellan `getByRole`, `getByLabel`, `getByText` och CSS-selektorer.
 (Ingen kod behöver committas i detta steg.)
