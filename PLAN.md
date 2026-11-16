@@ -8,10 +8,10 @@ Gör stegen i ordning. Bocka av `[x]` när "Klart när" är uppfyllt. Committa e
 
 **Lärmål:** grundläggande projektuppsättning, `.gitignore`, `package.json`-scripts.
 
-- [ ] Repo `movie-list-playwright` skapat på GitHub (README + Node-`.gitignore`) och klonat
-- [ ] `npm init -y` och `npm install express`
-- [ ] Script `"start": "node server.js"` i `package.json`
-- [ ] Mapparna `public/` och `tests/` skapade
+- [x] Repo `movie-list-playwright` skapat på GitHub (README + Node-`.gitignore`) och klonat
+- [x] `npm init -y` och `npm install express`
+- [x] Script `"start": "node server.js"` i `package.json`
+- [x] Mapparna `public/` och `tests/` skapade
 
 **Klart när:** första commiten är pushad och `node_modules/` inte syns på GitHub.
 
@@ -21,9 +21,9 @@ Gör stegen i ordning. Bocka av `[x]` när "Klart när" är uppfyllt. Committa e
 
 **Lärmål:** Express, REST, statuskoder, validering på servern.
 
-- [ ] `server.js` serverar `public/` statiskt och har alla endpoints enligt `docs/SPEC.md`
-- [ ] Validering med exakta felmeddelanden från SPEC
-- [ ] `POST /api/test/reset` som bara finns när `NODE_ENV !== 'production'`
+- [x] `server.js` serverar `public/` statiskt och har alla endpoints enligt `docs/SPEC.md`
+- [x] Validering med exakta felmeddelanden från SPEC
+- [x] `POST /api/test/reset` som bara finns när `NODE_ENV !== 'production'`
 
 **Klart när:** utvecklaren själv har testat API:t med `curl` (eller REST-klient) – minst en lyckad POST,
 en POST med tom titel (400), en GET, en DELETE och en reset.
@@ -34,10 +34,10 @@ en POST med tom titel (400), en GET, en DELETE och en reset.
 
 **Lärmål:** `fetch`, DOM-uppdatering, tillgängliga labels och knappnamn (och varför det hjälper testning).
 
-- [ ] `index.html`, `app.js`, `style.css` enligt SPEC (exakta texter och labels!)
-- [ ] Lägga till, visa, redigera, ta bort fungerar i webbläsaren
-- [ ] Felmeddelande visas i `role="alert"`
-- [ ] Tom lista visar "Inga filmer ännu", räknaren visar rätt antal
+- [x] `index.html`, `app.js`, `style.css` enligt SPEC (exakta texter och labels!)
+- [x] Lägga till, visa, redigera, ta bort fungerar i webbläsaren
+- [x] Felmeddelande visas i `role="alert"`
+- [x] Tom lista visar "Inga filmer ännu", räknaren visar rätt antal
 
 **Klart när:** utvecklaren manuellt har gått igenom hela CRUD-flödet i webbläsaren.
 

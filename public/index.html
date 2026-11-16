@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Filmlista</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>Filmlista</h1>
+
+    <div id="error" role="alert" hidden></div>
+
+    <form id="movie-form">
+      <div class="field">
+        <label for="title">Titel</label>
+        <input id="title" type="text">
+      </div>
+      <div class="field">
+        <label for="year">År</label>
+        <input id="year" type="number">
+      </div>
+      <div class="field">
+        <label for="rating">Betyg</label>
+        <select id="rating">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+      </div>
+      <div class="field checkbox">
+        <input id="watched" type="checkbox">
+        <label for="watched">Sedd</label>
+      </div>
+      <button type="submit">Lägg till film</button>
+    </form>
+
+    <p id="count"></p>
+    <p id="empty" hidden>Inga filmer ännu</p>
+    <ul id="movie-list" aria-label="Filmer"></ul>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

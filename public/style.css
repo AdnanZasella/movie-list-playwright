@@ -1,0 +1,90 @@
+body {
+  font-family: system-ui, sans-serif;
+  background: #f4f4f6;
+  color: #222;
+  margin: 0;
+}
+
+main {
+  max-width: 640px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: flex-end;
+  background: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.field.checkbox {
+  flex-direction: row;
+  align-items: center;
+}
+
+input[type="text"] { min-width: 12rem; }
+input[type="number"] { width: 6rem; }
+
+button {
+  cursor: pointer;
+  padding: 0.4rem 0.8rem;
+  border: 1px solid #888;
+  border-radius: 4px;
+  background: #fff;
+}
+
+form button[type="submit"] {
+  background: #2f5fd0;
+  border-color: #2f5fd0;
+  color: #fff;
+}
+
+[role="alert"] {
+  background: #fde8e8;
+  border: 1px solid #e0a0a0;
+  color: #8a1c1c;
+  padding: 0.6rem 0.8rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  padding: 0.6rem 0.8rem;
+  border-radius: 6px;
+  margin-bottom: 0.5rem;
+}
+
+li .actions {
+  display: flex;
+  gap: 0.4rem;
+}
+
+li .edit-fields {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+}
