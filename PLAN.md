@@ -47,17 +47,17 @@ en POST med tom titel (400), en GET, en DELETE och en reset.
 
 **Lärmål:** vad Playwright installerar, `playwright.config.ts`, `webServer`, `baseURL`, projekt/webbläsare.
 
-- [ ] `npm init playwright@latest` (TypeScript, mapp `tests`, **ja** till GitHub Actions, **ja** till att installera webbläsare)
-- [ ] Ta bort exempeltesterna (`tests/example.spec.ts`, ev. `tests-examples/`)
-- [ ] Konfigurera i `playwright.config.ts`:
+- [x] `npm init playwright@latest` (TypeScript, mapp `tests`, **ja** till GitHub Actions, **ja** till att installera webbläsare)
+- [x] Ta bort exempeltesterna (`tests/example.spec.ts`, ev. `tests-examples/`)
+- [x] Konfigurera i `playwright.config.ts`:
   - `webServer` som kör `npm start` mot `http://localhost:3000`, `reuseExistingServer: !process.env.CI`
   - `use.baseURL: 'http://localhost:3000'`
   - `use.trace: 'on-first-retry'`
   - Behåll projekten chromium, firefox, webkit
-- [ ] Ett första "rökttest": sidan laddas och rubriken "Filmlista" syns
-- [ ] Kontrollera att `.gitignore` innehåller `test-results/`, `playwright-report/`, `blob-report/`, `playwright/.cache/`
+- [x] Ett första "rökttest": sidan laddas och rubriken "Filmlista" syns
+- [x] Kontrollera att `.gitignore` innehåller `test-results/`, `playwright-report/`, `blob-report/`, `playwright/.cache/`
 
-**Klart när:** `npx playwright test` är grönt i alla tre webbläsare, och utvecklaren har öppnat
+**Klart när:** `npx playwright test` är grönt i Chromium lokalt (Firefox/WebKit blockeras av Smart App Control på Windows – de körs i CI i Steg 7), och utvecklaren har öppnat
 `npx playwright show-report` och `npx playwright test --ui` och sett hur de fungerar.
 
 ---
